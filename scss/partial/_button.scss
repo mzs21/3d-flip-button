@@ -1,0 +1,19 @@
+.btn{
+    position: relative;
+    height: 300px;
+    width: 450px;
+
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+    transform: translateZ(-150px);
+
+    justify-self: center;
+    align-self: center;
+
+    
+    &:hover{
+        transform: rotateX(-90deg) translateY(75px);
+    }
+}
+
+

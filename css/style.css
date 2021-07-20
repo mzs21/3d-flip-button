@@ -1,0 +1,112 @@
+.btn {
+  position: relative;
+  height: 300px;
+  width: 450px;
+  transform-style: preserve-3d;
+  transition: transform 300ms ease-in-out;
+  transform: translateZ(-150px);
+  justify-self: center;
+  align-self: center;
+}
+
+.btn:hover {
+  transform: rotateX(-90deg) translateY(75px);
+}
+
+.side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.default-side {
+  background-color: white;
+  border: 10px solid #1e6dc7;
+  color: #1e6dc7;
+  transform: translateZ(150px);
+}
+
+.hover-side {
+  background: center/cover;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.blue-mosque {
+  background-image: url("https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=719&q=80");
+}
+
+.hagia-sophia {
+  background-image: url("https://images.unsplash.com/photo-1601163130717-627cde53c1de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+
+.cappadocia {
+  background-image: url("https://images.unsplash.com/photo-1510253687831-0f982d7862fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=747&q=80");
+}
+
+.bisnakandi {
+  background-image: url("https://images.unsplash.com/photo-1599137248983-e6061c27ec80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=948&q=80");
+}
+
+.sundarbans {
+  background-image: url("https://images.unsplash.com/photo-1549300461-11c5b94e8855?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+}
+
+.sonargaon {
+  background-image: url("https://images.unsplash.com/photo-1604993497451-eed6eb271a9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80");
+}
+
+.dhuppani {
+  background-image: url("https://images.unsplash.com/photo-1574691967466-c6473ad5d643?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=805&q=80");
+}
+
+.sajek {
+  background-image: url("https://images.unsplash.com/photo-1589307357647-4e11b161a2b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=716&q=80");
+}
+
+.mount-fuji {
+  background-image: url("https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+}
+
+.meguro-river {
+  background-image: url("https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
+}
+
+.bamboo-forest {
+  background-image: url("https://images.unsplash.com/photo-1466443580024-a4f9e125f39c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80");
+}
+
+.tokyo-tower {
+  background-image: url("https://images.unsplash.com/photo-1513407030348-c983a97b98d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: grey;
+}
+
+body {
+  perspective: 800px;
+}
+
+main {
+  margin: 20px 50px;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(350px, 1fr))/repeat(auto-fit, minmax(450px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-gap: 100px;
+  row-gap: 200px;
+}
